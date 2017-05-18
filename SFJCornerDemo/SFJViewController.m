@@ -22,27 +22,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    _view1.layer.cornerRadius = 20;
-    [self setViewCornerRadius:_view1];
+    _view1.layer.cornerRadius = 20;
+    _btn.layer.cornerRadius = 20;
     
-    
-//    _btn.layer.cornerRadius = 20;
-    [self setViewCornerRadius:_btn];
-    
-    
-//    _label.layer.cornerRadius = 20;
-    [self setViewCornerRadius:_label];
-    
-//    _label.layer.masksToBounds = YES;
+    _label.layer.cornerRadius = 20;
+    _label.layer.masksToBounds = YES;
     
     _imgView.layer.cornerRadius = 20;
     _imgView.clipsToBounds = YES;
-    
-    
-    
-    
-    
-    
 }
 
 - (void)setViewCornerRadius:(UIView *)view{

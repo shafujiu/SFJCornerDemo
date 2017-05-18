@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (SFJCorner)
-
+// 不建议采用 可以使用layer.cornerRadiu代替
 - (void)setCornerRadius:(CGFloat)radius;
 
+// 快速实现部分圆角
 - (void)setCornerRadius:(CGFloat)radius withCorners:(UIRectCorner)corners;
 
 @end
