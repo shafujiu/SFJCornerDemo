@@ -36,7 +36,9 @@ self.layer.rasterizationScale = [UIScreen mainScreen].scale;
 ## mask
 本位提供了一个分类 实现mask 生成圆角，或者部分圆角，建议采用部分圆角就行了，因为layer的方式没办法解决部分圆角的问题。
 ```Objective-c
+// 不建议采用 可以使用layer.cornerRadiu代替
 - (void)setCornerRadius:(CGFloat)radius;
+// 快速实现部分圆角
 - (void)setCornerRadius:(CGFloat)radius withCorners:(UIRectCorner)corners;
 ```
 
